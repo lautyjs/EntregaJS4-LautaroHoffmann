@@ -1,0 +1,211 @@
+body {
+    margin: 0px;
+    padding: 0;
+}
+
+.nav-container {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: orange;
+}
+
+.navbar-logo {
+    justify-self: start;
+    margin-left: 20px;
+    color: white;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+.ver-carrito {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-container {
+    text-align: center;
+
+}
+
+.banner h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.shop-content {
+    font-style: italic;
+    text-transform: uppercase;
+    display: flex;
+    height: 40vh;
+    width: 90vw;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 30px;
+}
+
+.card {
+    max-width: 100vw;
+    width: 25vw;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card > img {
+    width: 20vw;
+    height: 30vh;
+}
+
+.card > h3 {
+    padding-top: 15px;
+}
+
+.price  {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1b1b1b;
+    color: aliceblue;
+    width: 100%;
+}
+
+.modal-header-title {
+    justify-self: start;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modal-container > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container > div > img {
+    height: 120px;
+    width: 120px;
+}
+
+.delete-product {
+    cursor: pointer;
+}
+
+.cantidad-carrito {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+}
+
+.sumar{
+    cursor: pointer;
+}
+
+.restar{
+    cursor: pointer;
+}
+
+.finish{
+    margin: 10px;
+}
+
+.finish-buy{
+    justify-content: center;
+
+}
+
+.modal-header-end {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1b1b1b;
+    color: aliceblue;
+    width: 70%;
+    position: absolute;
+    top: 14vh;
+}
+
+#preloader {
+    background: #000 url(src/preloader.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
